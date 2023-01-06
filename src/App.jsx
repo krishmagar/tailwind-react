@@ -16,6 +16,14 @@ function App() {
       </div>
       <h1 className='text-4xl font-bold text-red-600 uppercase relative before:absolute before:top-1/2 before:-translate-y-1/2 before:h-1 before:w-screen before:bg-red-600 before:left-0'><span className='bg-white p-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 '>Vite + React</span></h1>
       <span></span>
+
+      <form action="" className='flex flex-col mt-[12rem] space-y-2'>
+        <input type="text" className='shadow-sm focus:ring-2 ring-offset-4 rounded-md' placeholder='Enter Your Name' />
+        <input type="email" className='shadow-sm focus:ring-2' placeholder='Enter Your Email'/>
+        <input type="Password" className='shadow-sm focus:ring-2' placeholder='Enter Your Password' />
+        <button type='submit'>Submit</button>
+      </form>
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
